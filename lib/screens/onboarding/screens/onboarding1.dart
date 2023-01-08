@@ -1,8 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:food_ninja/constants/textsTyles.dart';
-import 'package:hexcolor/hexcolor.dart';
+import '/constants/screens_dir.dart';
 
 class OnboardingOne extends StatefulWidget {
   const OnboardingOne({super.key});
@@ -36,24 +35,6 @@ class _OnboardingOneState extends State<OnboardingOne> {
                 fontSize: 12,
               ),
             ),
-            SizedBox(height: 42),
-            // Padding(
-            //   padding: const EdgeInsets.all(16.0),
-            //   child: ElevatedButton(
-            //     style: ElevatedButton.styleFrom(
-            //       elevation: 0,
-            //       padding: EdgeInsets.symmetric(horizontal: 8, vertical: 30),
-            //       minimumSize: Size.fromHeight(20),
-            //       shape: RoundedRectangleBorder(
-            //         borderRadius: BorderRadius.circular(12),
-            //       ),
-            //       backgroundColor: HexColor('53E88B'),
-            //       // textStyle: mainTextStyle.copyWith(fontSize: 18),
-            //     ),
-            //     onPressed: () {},
-            //     child: Text('Next'),
-            //   ),
-            // )
           ],
         ),
       ),

@@ -1,9 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
-
-import '../../../constants/textsTyles.dart';
+import '../../../constants/screens_dir.dart';
 
 class OnboardingTwo extends StatelessWidget {
   const OnboardingTwo({super.key});

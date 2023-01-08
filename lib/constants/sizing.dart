@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:food_ninja/constants/screens_dir.dart';
 
-const sizedHeight50 = SizedBox(height: 50);
-const sizedHeight40 = SizedBox(height: 40);
-const sizedHeight35 = SizedBox(height: 35);
-const sizedHeight30 = SizedBox(height: 30);
-const sizedHeight20 = SizedBox(height: 20);
-const sizedHeight15 = SizedBox(height: 15);
-const sizedHeight10 = SizedBox(height: 10);
-const sizedHeight05 = SizedBox(height: 05);
+final sizedHeight50 = SizedBox(height: 50.h);
+final sizedHeight40 = SizedBox(height: 40.h);
+final sizedHeight35 = SizedBox(height: 35.h);
+final sizedHeight30 = SizedBox(height: 30.h);
+final sizedHeight20 = SizedBox(height: 20.h);
+final sizedHeight15 = SizedBox(height: 15.h);
+final sizedHeight10 = SizedBox(height: 10.h);
+final sizedHeight05 = SizedBox(height: 5.h);
 
-const sizedWidth40 = SizedBox(width: 40);
-const sizedWidth35 = SizedBox(width: 35);
-const sizedWidth30 = SizedBox(width: 30);
-const sizedWidth20 = SizedBox(width: 20);
-const sizedWidth15 = SizedBox(width: 15);
-const sizedWidth10 = SizedBox(width: 10);
-const sizedWidth05 = SizedBox(width: 05);
+final sizedWidth40 = SizedBox(width: 40.w);
+final sizedWidth35 = SizedBox(width: 35.w);
+final sizedWidth30 = SizedBox(width: 30.w);
+final sizedWidth20 = SizedBox(width: 20.w);
+final sizedWidth15 = SizedBox(width: 15.w);
+final sizedWidth10 = SizedBox(width: 10.w);
+final sizedWidth05 = SizedBox(width: 5.w);
 
-const sizedFormSpacing = SizedBox(height: 12);
+final sizedFormSpacing = SizedBox(height: 12.h);
 
-const primaryPadding = EdgeInsets.symmetric(horizontal: 16.0);
+final defaultPadding = EdgeInsets.symmetric(horizontal: 16.0.w);

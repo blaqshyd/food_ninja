@@ -1,12 +1,7 @@
 // ignore_for_file: prefer_const_constructors, file_names
 
 import 'package:flutter/material.dart';
-import 'package:food_ninja/constants/colors.dart';
-import 'package:food_ninja/constants/routes.dart';
-import 'package:food_ninja/constants/sizing.dart';
-import 'package:food_ninja/constants/textsTyles.dart';
-import '../../utils/btn_widget.dart';
-import '../../utils/custom_formfield.dart';
+import '../../constants/screens_dir.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -14,17 +9,14 @@ class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColor,
+      // backgroundColor: backgroundColor,
       body: Stack(
         children: [
           Positioned(
-            left: 0,
-            right: 0,
-            bottom: 20,
             child: Image.asset('assets/images/pattern.png'),
           ),
           Padding(
-            padding: primaryPadding,
+            padding: defaultPadding,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
@@ -87,9 +79,10 @@ class SignUpScreen extends StatelessWidget {
                 sizedHeight15,
                 ButtonWidget(
                   backgroundColor: primaryColor,
-                  onPressed: () {},
-                  buttonText: 'Create Account',
-                  icon: Text(""), // I need to fix this
+                  onPressed: () {
+                    Navigator.pushNamed(context, singUpProcessRoute);
+                  },
+                  child: Text('Create Account'),
                 ),
                 sizedHeight20,
                 TextButton(

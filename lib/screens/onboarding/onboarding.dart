@@ -46,8 +46,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 onLastPage: onLastPage,
                 pageViewController: pageViewController,
                 backgroundColor: primaryColor,
-                buttonText: 'Next',
-                icon: Text(''),
+                child: Text('Next'),
                 onPressed: () {
                   onLastPage
                       ? Navigator.pushNamedAndRemoveUntil(
