@@ -34,10 +34,24 @@ class SignInScreen extends StatelessWidget {
                   ),
                   sizedHeight40,
                   CustomFormField(
+                    inputFillColor: lightScaffoldBgColor,
                     inputHint: 'Email',
+                    boxShadow: [
+                      BoxShadow(
+                        color: lightSecondaryColor,
+                        blurRadius: 10.0,
+                        offset: Offset(0, 5),
+                      ),
+                      BoxShadow(
+                        color: lightSecondaryColor,
+                        blurRadius: 10.0,
+                        offset: Offset(-5, 0),
+                      ),
+                    ],
                   ),
                   sizedFormSpacing,
                   CustomFormField(
+                    inputFillColor: lightScaffoldBgColor,
                     inputHint: 'Password',
                     obscureText: true,
                     boxShadow: [

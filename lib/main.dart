@@ -6,8 +6,8 @@ import 'package:food_ninja/constants/themes.dart';
 import 'package:food_ninja/screens/auth_screens/auth_reset_complete.dart';
 import 'package:food_ninja/screens/auth_screens/forgot_pwd.dart';
 import 'package:food_ninja/screens/auth_screens/password_reset.dart';
-import 'package:food_ninja/screens/home/home_screen.dart';
-import 'package:food_ninja/screens/home/main_page.dart';
+import 'package:food_ninja/screens/pages/home/home_screen.dart';
+import 'package:food_ninja/screens/pages/main_page.dart';
 import 'package:food_ninja/screens/onboarding/splash_screen.dart';
 
 import 'screens/onboarding/onboarding.dart';

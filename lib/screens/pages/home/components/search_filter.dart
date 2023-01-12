@@ -1,30 +1,7 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:feather_icons/feather_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:food_ninja/constants/screens_dir.dart';
 import 'package:hexcolor/hexcolor.dart';
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: lightScaffoldBgColor,
-      body: Padding(
-        padding: defaultPadding,
-        child: Column(
-          children: [
-            SearchFilter(),
-            sizedHeight15,
-            Image.asset('assets/images/promo_advertising.png')
-          ],
-        ),
-      ),
-    );
-  }
-}
 
 class SearchFilter extends StatelessWidget {
   const SearchFilter({

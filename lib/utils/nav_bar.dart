@@ -17,53 +17,66 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 80,
-      decoration: BoxDecoration(
-        color: lightScaffoldBgColor.withOpacity(.88),
-        borderRadius: BorderRadius.circular(25),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(14.0),
-        child: GNav(
-            color: lightScaffoldBgColor,
-            activeColor: primaryColor,
-            tabBackgroundColor: primaryColor.withOpacity(0.7),
-            textStyle: mainTextStyle.copyWith(
-              fontSize: 12,
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Container(
+        margin: EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+        height: 80,
+        decoration: BoxDecoration(
+          color: lightScaffoldBgColor.withOpacity(.88),
+          borderRadius: BorderRadius.circular(25),
+          boxShadow: [
+            BoxShadow(
+              color: lightSecondaryColor,
+              blurRadius: 10.0,
+              offset: Offset(0, 5),
             ),
-            tabBorderRadius: 30,
-            iconSize: 18,
-            gap: 8,
-            selectedIndex: selectedIndex,
-            onTabChange: onTap,
-            duration: Duration(milliseconds: 900),
-            padding: EdgeInsets.symmetric(
-              horizontal: 23,
-              vertical: 15,
+            BoxShadow(
+              color: lightSecondaryColor,
+              blurRadius: 10.0,
+              offset: Offset(-5, 0),
             ),
-            tabs: [
-              GButton(
-                icon: FeatherIcons.home,
-                text: 'Home',
+          ],
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(14.0),
+          child: GNav(
+              color: primaryColor,
+              activeColor: lightScaffoldBgColor,
+              tabBackgroundColor: primaryColor.withOpacity(0.4),
+              textStyle: mainTextStyle.copyWith(
+                fontSize: 12,
               ),
-              GButton(
-                icon: FeatherIcons.star,
-                text: 'Favorite',
+              tabBorderRadius: 12,
+              iconSize: 20,
+              gap: 10,
+              selectedIndex: selectedIndex,
+              onTabChange: onTap,
+              duration: Duration(milliseconds: 900),
+              padding: EdgeInsets.symmetric(
+                horizontal: 23,
+                vertical: 15,
               ),
-              GButton(
-                icon: FeatherIcons.bookOpen,
-                text: 'Course',
-              ),
-              GButton(
-                icon: FeatherIcons.user,
-                text: 'Profile',
-              ),
-              // GButton(
-              //   icon: FeatherIcons.user,
-              //   // text: 'Profile',
-              // ),
-            ]),
+              tabs: [
+                GButton(
+                  active: true,
+                  icon: FeatherIcons.home,
+                  text: 'Home',
+                ),
+                GButton(
+                  icon: FeatherIcons.user,
+                  text: 'Profile',
+                ),
+                GButton(
+                  icon: FeatherIcons.shoppingCart,
+                  text: 'Cart',
+                ),
+                GButton(
+                  icon: FeatherIcons.messageCircle,
+                  text: 'Chat',
+                ),
+              ]),
+        ),
       ),
     );
   }

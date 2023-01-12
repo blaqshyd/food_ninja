@@ -12,13 +12,39 @@ class ResetPassword extends StatelessWidget {
       body: AuthProcessWidget(
         authWidget: [
           CustomFormField(
+            inputFillColor: lightScaffoldBgColor,
             inputHint: 'New Password',
             suffixIcon: Icon(Icons.visibility),
+            boxShadow: [
+              BoxShadow(
+                color: lightSecondaryColor,
+                blurRadius: 10.0,
+                offset: Offset(0, 5),
+              ),
+              BoxShadow(
+                color: lightSecondaryColor,
+                blurRadius: 10.0,
+                offset: Offset(-5, 0),
+              ),
+            ],
           ),
           sizedFormSpacing,
           CustomFormField(
+            inputFillColor: lightScaffoldBgColor,
             inputHint: 'Confirm Password',
             suffixIcon: Icon(Icons.visibility),
+            boxShadow: [
+              BoxShadow(
+                color: lightSecondaryColor,
+                blurRadius: 10.0,
+                offset: Offset(0, 5),
+              ),
+              BoxShadow(
+                color: lightSecondaryColor,
+                blurRadius: 10.0,
+                offset: Offset(-5, 0),
+              ),
+            ],
           ),
         ],
         title: 'Reset your password\nhere',
