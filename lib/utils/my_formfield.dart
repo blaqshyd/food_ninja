@@ -7,7 +7,7 @@ class MyFormField extends StatelessWidget {
   final bool? inputSuggestions;
   final InputBorder? border, focusedBorder;
   final Color? inputFillColor;
-  final Icon? prefixIcon, suffixIcon;
+  final IconButton? prefixIcon, suffixIcon;
   final EdgeInsetsGeometry? contentPadding;
   final TextEditingController? controller;
   final TextInputType? inputKeyboardType;

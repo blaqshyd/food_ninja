@@ -1,5 +1,8 @@
 [
-    {
+   {
+    "resTitle": "Restaurant",
+    "resFilter": [
+       {
         "resGroup": "Popular Restaurant",
         "resList": [
             {
@@ -12,14 +15,14 @@
                 "resName": "Healthy Food",
                 "resDistance": 4
             },
-            {
+            { 
                 "resImage": "assets/images/restaurant2.png",
                 "resName": "Good Food",
                 "resDistance": 15
             }
         ]
-    },
-    {
+       },
+       {
         "resGroup": "Nearest Restaurant",
         "resList": [
             {
@@ -38,5 +41,8 @@
                 "resDistance": 15
             }
         ]
-    }
+       }
+
+    ]
+   }
 ]

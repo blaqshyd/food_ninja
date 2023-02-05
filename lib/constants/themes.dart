@@ -11,6 +11,7 @@ class MyThemes {
     scaffoldBackgroundColor: darkScaffoldBgColor,
     colorScheme: ColorScheme.dark(),
     brightness: Brightness.dark,
+    
   );
 
   // Light Mode

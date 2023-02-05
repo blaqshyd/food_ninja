@@ -17,13 +17,16 @@ class SearchFilter extends StatelessWidget {
             inputHint: 'What do you want to order?',
             inputFillColor: HexColor('F9A84D').withOpacity(.2),
             inputHintStyle: homeSearchStyle,
-            prefixIcon: Icon(
-              FeatherIcons.search,
-              color: HexColor('DA6317'),
+            prefixIcon: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                FeatherIcons.search,
+                color: HexColor('DA6317'),
+              ),
             ),
           ),
         ),
-        sizedWidth10,
+        sizedWidth05,
         GestureDetector(
           child: Container(
             width: 58,

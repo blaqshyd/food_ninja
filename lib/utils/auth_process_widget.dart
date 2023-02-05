@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:food_ninja/utils/back_btn.dart';
 import '../../constants/screens_dir.dart';
 
 class AuthProcessWidget extends StatelessWidget {
@@ -10,7 +11,7 @@ class AuthProcessWidget extends StatelessWidget {
   const AuthProcessWidget({
     required this.authWidget,
     required this.title,
-    this.onPressed,
+    required this.onPressed,
     Key? key,
   }) : super(key: key);
 
@@ -24,22 +25,7 @@ class AuthProcessWidget extends StatelessWidget {
           bottom: 0,
           child: Image.asset('assets/images/pattern1.png'),
         ),
-        Positioned(
-          left: 16,
-          top: 60,
-          child: GestureDetector(
-            onTap: () => Navigator.pop(context),
-            child: Container(
-              width: 45,
-              height: 45,
-              decoration: BoxDecoration(
-                color: backButtonBgColor,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Image.asset('assets/images/back_ios.png'),
-            ),
-          ),
-        ),
+        BackButtonW(),
         Padding(
           padding: defaultPadding,
           child: Column(

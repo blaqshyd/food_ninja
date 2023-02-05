@@ -19,28 +19,10 @@ class RestaurantList extends StatelessWidget {
 
       child: Container(
         decoration: BoxDecoration(
-            color: lightScaffoldBgColor,
-            borderRadius: BorderRadius.circular(12),
-            boxShadow: [
-              BoxShadow(
-                color: lightSecondaryColor,
-                offset: const Offset(0, 5),
-              ),
-              BoxShadow(
-                color: lightSecondaryColor,
-                offset: const Offset(5, 5),
-              ),
-              BoxShadow(
-                color: lightSecondaryColor,
-                offset: const Offset(5, 10),
-                spreadRadius: 5,
-              ),
-              BoxShadow(
-                color: lightSecondaryColor,
-                offset: const Offset(5, 0),
-                spreadRadius: 5,
-              ),
-            ]),
+          color: lightScaffoldBgColor,
+          borderRadius: BorderRadius.circular(12),
+          boxShadow: boxShadow,
+        ),
         width: 145,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

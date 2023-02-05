@@ -10,7 +10,7 @@ import 'my_formfield.dart';
 class CustomFormField extends StatelessWidget {
   final String? inputHint;
   final TextStyle? inputHintStyle;
-  final Icon? suffixIcon, prefixIcon;
+  final IconButton? suffixIcon, prefixIcon;
   final Color? inputFillColor;
   final List<BoxShadow>? boxShadow;
   final bool? obscureText;

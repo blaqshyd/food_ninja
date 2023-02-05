@@ -9,13 +9,13 @@ class AppBarScreen extends StatelessWidget with PreferredSizeWidget {
   final Size preferredSize;
 
   AppBarScreen({Key? key})
-      : preferredSize = const Size.fromHeight(160.0),
+      : preferredSize = const Size.fromHeight(140.0),
         super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      minimum: EdgeInsets.only(top: 80, bottom: 20),
+      minimum: EdgeInsets.only(top: 65, bottom: 15),
       child: AppBar(
         backgroundColor: lightScaffoldBgColor,
         elevation: 0,
@@ -40,17 +40,28 @@ class AppBarScreen extends StatelessWidget with PreferredSizeWidget {
               bottom: 8.0,
               right: 16.0,
             ),
-            child: GestureDetector(
-              onTap: () => Navigator.pop(context),
-              child: Container(
-                width: 45,
-                height: 45,
-                decoration: BoxDecoration(
-                  color: lightSecondaryColor,
-                  borderRadius: BorderRadius.circular(15),
+            child: Stack(
+              children: [
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  top: 30,
+                  // bottom: 120,
+                  child: Image.asset('assets/images/pattern1.png'),
                 ),
-                child: Image.asset('assets/images/icon_notifiaction.png'),
-              ),
+                GestureDetector(
+                  onTap: () => Navigator.pop(context),
+                  child: Container(
+                    width: 45,
+                    height: 45,
+                    decoration: BoxDecoration(
+                      color: lightSecondaryColor,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Image.asset('assets/images/icon_notifiaction.png'),
+                  ),
+                ),
+              ],
             ),
           )
         ],

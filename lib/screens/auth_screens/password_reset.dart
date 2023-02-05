@@ -14,7 +14,10 @@ class ResetPassword extends StatelessWidget {
           CustomFormField(
             inputFillColor: lightScaffoldBgColor,
             inputHint: 'New Password',
-            suffixIcon: Icon(Icons.visibility),
+            suffixIcon: IconButton(
+              icon: Icon(Icons.visibility),
+              onPressed: () {},
+            ),
             boxShadow: [
               BoxShadow(
                 color: lightSecondaryColor,
@@ -32,7 +35,10 @@ class ResetPassword extends StatelessWidget {
           CustomFormField(
             inputFillColor: lightScaffoldBgColor,
             inputHint: 'Confirm Password',
-            suffixIcon: Icon(Icons.visibility),
+            suffixIcon: IconButton(
+              icon: Icon(Icons.visibility),
+              onPressed: () {},
+            ),
             boxShadow: [
               BoxShadow(
                 color: lightSecondaryColor,

@@ -58,7 +58,8 @@ class SetLocation extends StatelessWidget {
                   child: Padding(
                     padding: defaultPadding,
                     child: ButtonWidget(
-                      backgroundColor: lightSecondaryColor,
+                      backgroundColor: lightScaffoldBgColor,
+
                       // buttonText: '',
                       child: Text(
                         'Set Location',

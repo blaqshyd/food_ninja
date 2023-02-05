@@ -6,6 +6,7 @@ import '../../constants/screens_dir.dart';
 class ButtonWidget extends StatelessWidget {
   const ButtonWidget({
     Key? key,
+    this.btnPadding,
     this.onLastPage,
     this.pageViewController,
     this.backgroundColor,
@@ -21,6 +22,7 @@ class ButtonWidget extends StatelessWidget {
   final Color? backgroundColor;
   final TextStyle? style;
   final Widget child;
+  final EdgeInsetsGeometry? btnPadding;
   final Function()? onPressed;
 
   @override
@@ -43,7 +45,8 @@ class ButtonWidget extends StatelessWidget {
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           elevation: 0,
-          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 30),
+          padding:
+              btnPadding ?? EdgeInsets.symmetric(horizontal: 8, vertical: 30),
           minimumSize: Size.fromHeight(20),
           // minimumSize: Size(double.infinity, 80),
           shape: RoundedRectangleBorder(

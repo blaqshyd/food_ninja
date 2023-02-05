@@ -9,6 +9,7 @@ final sizedHeight20 = SizedBox(height: 20.h);
 final sizedHeight15 = SizedBox(height: 15.h);
 final sizedHeight10 = SizedBox(height: 10.h);
 final sizedHeight05 = SizedBox(height: 5.h);
+final sizedHeight02 = SizedBox(height: 2.h);
 
 final sizedWidth40 = SizedBox(width: 40.w);
 final sizedWidth35 = SizedBox(width: 35.w);
@@ -20,4 +21,24 @@ final sizedWidth05 = SizedBox(width: 5.w);
 
 final sizedFormSpacing = SizedBox(height: 12.h);
 
-final defaultPadding = EdgeInsets.symmetric(horizontal: 16.0.w);
+const defaultPadding = EdgeInsets.symmetric(horizontal: 16.0);
+final borderRadius = BorderRadius.circular(15);
+
+const primarySize = 16.0;
+const secondarySize = 14.0;
+const miniSize = 12.0;
+
+final boxShadow = [
+  BoxShadow(
+    color: lightSecondaryColor,
+    blurRadius: 10.0,
+    spreadRadius: 5,
+    offset: const Offset(0, 5),
+  ),
+  BoxShadow(
+    color: lightSecondaryColor,
+    blurRadius: 10.0,
+    spreadRadius: 5,
+    offset: const Offset(-5, 0),
+  ),
+];

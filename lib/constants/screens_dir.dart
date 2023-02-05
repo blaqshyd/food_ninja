@@ -16,3 +16,4 @@ export '../screens/auth_screens/sign_up_screen..dart';
 export '../screens/auth_screens/upload_file.dart';
 export '../screens/auth_screens/upload_review.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
+export 'package:feather_icons/feather_icons.dart';

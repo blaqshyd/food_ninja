@@ -77,6 +77,8 @@ class SignInScreen extends StatelessWidget {
                     children: [
                       Expanded(
                           child: ButtonWidget(
+                        btnPadding:
+                            EdgeInsets.symmetric(horizontal: 8, vertical: 25),
                         onPressed: () {},
                         // buttonText: 'Facebook',
                         backgroundColor: lightScaffoldBgColor,
@@ -99,6 +101,8 @@ class SignInScreen extends StatelessWidget {
                       SizedBox(width: 15),
                       Expanded(
                           child: ButtonWidget(
+                        btnPadding:
+                            EdgeInsets.symmetric(horizontal: 8, vertical: 25),
                         onPressed: () {},
                         // buttonText: 'Google',
                         backgroundColor: lightScaffoldBgColor,

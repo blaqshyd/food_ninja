@@ -1,7 +1,4 @@
 
-
-import 'package:flutter/material.dart';
-import 'package:food_ninja/constants/themes.dart';
 import 'package:hexcolor/hexcolor.dart';
 
 final primaryColor = HexColor('53E88B');

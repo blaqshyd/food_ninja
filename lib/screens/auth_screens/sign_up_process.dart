@@ -15,14 +15,53 @@ class SignUpProcess extends StatelessWidget {
         authWidget: <Widget>[
           CustomFormField(
             inputHint: 'First name',
+            inputFillColor: lightScaffoldBgColor,
+            boxShadow: [
+              BoxShadow(
+                color: lightSecondaryColor,
+                blurRadius: 10.0,
+                offset: Offset(0, 5),
+              ),
+              BoxShadow(
+                color: lightSecondaryColor,
+                blurRadius: 10.0,
+                offset: Offset(-5, 0),
+              ),
+            ],
           ),
           sizedFormSpacing,
           CustomFormField(
             inputHint: 'Last name',
+            inputFillColor: lightScaffoldBgColor,
+            boxShadow: [
+              BoxShadow(
+                color: lightSecondaryColor,
+                blurRadius: 10.0,
+                offset: Offset(0, 5),
+              ),
+              BoxShadow(
+                color: lightSecondaryColor,
+                blurRadius: 10.0,
+                offset: Offset(-5, 0),
+              ),
+            ],
           ),
           sizedFormSpacing,
           CustomFormField(
             inputHint: 'Mobile number',
+            inputFillColor: lightScaffoldBgColor,
+            boxShadow: [
+              BoxShadow(
+                color: lightSecondaryColor,
+                blurRadius: 10.0,
+                offset: Offset(0, 5),
+              ),
+              BoxShadow(
+                color: lightSecondaryColor,
+                blurRadius: 10.0,
+                offset: Offset(-5, 0),
+              ),
+            ],
           ),
         ],
         onPressed: () => Navigator.pushNamed(context, paymentMethodRoute),
